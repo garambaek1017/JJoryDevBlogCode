@@ -6,27 +6,29 @@
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
     <div class="main shadow">
+
+      
         <div class="mt-4 mr-4 mb-4 ml-41">
             <div class="row">
                 @foreach (var work in WorkCarrer)
-            {
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100 text-white text-center bg-dark border-light">
-                        <a href="#"><img class="card-img-top" src="@work.Image" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a href="#">@work.Title</a>
-                            </h4>
-                            <p class="card-text">@work.Info</p>
-                        </div>
-                        <div class="card-footer bg-transparent ">
-                            <a href="#" class="btn btn-warning"> 상세설명 </a>
+                {
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                        <div class="card h-100 text-white text-center bg-dark border-light">
+                            <a href="#"><img class="card-img-top" src="@work.Image" alt=""></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="#">@work.Title</a>
+                                </h4>
+                                <p class="card-text">@work.Info</p>
+                            </div>
+                            <div class="card-footer bg-transparent ">
+                                <a href="#" class="btn btn-warning"> 상세설명 </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            }
+                }
             </div>
-            
+
         </div>
 
     </div>
